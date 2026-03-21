@@ -37,5 +37,21 @@ int main()
     std::cout << "If you see " << friends_firstname << " please ask her to call me\n";
   }
 
+  std::cout << "What is the age of the recipient: ";
+  int age;
+  std::cin >> age;
+
+  std::cout << "I hear you just had a birthday and your " << age << " years old\n";
+
+  if (age < 12) {
+    std::cout << "Next year your will be " << age + 1 << std::endl;
+  } else if (age == 17) {
+    std::cout << "Next year you will be able to vote\n";
+  } else if (age > 70) {
+    std::cout << "I hope you are enjoying retirement\n";
+  }
+
+  std::cout << "Yours sincerely, " << name << std::endl;
+
   return 0;
 }
